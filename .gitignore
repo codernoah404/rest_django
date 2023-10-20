@@ -1,1 +1,9 @@
+settings/prod.py
+drf_study/__pycache__
+account/__pycache__
+study/__pycache__
+account/migrations/__pycache__
+study/migrations/__pycache__
 drf_study/settings/prod.py
+
+db.sqlite3
