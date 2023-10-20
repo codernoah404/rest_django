@@ -6,10 +6,12 @@ class Students(models.Model):
     address = models.CharField(max_length=50)
     email = models.CharField(max_length=30)
     
+    def __str__(self) -> str:
+        return self.name
     
-class score(models.Model):
+class Score(models.Model):
     Student = models.ForeignKey(Students, on_delete=models.CASCADE)
     english =  models.IntegerField(null=False)
     math = models.IntegerField(null=False)
     science = models.IntegerField(null=False )
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=False)
